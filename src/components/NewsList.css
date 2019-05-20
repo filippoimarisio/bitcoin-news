@@ -5,3 +5,9 @@ ul {
 li {
   display: inline-block;
 }
+
+.loader {
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+}

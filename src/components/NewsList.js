@@ -16,7 +16,7 @@ class NewsList extends Component {
 
     if (!this.props.news.articles) {
       return (
-        <div>
+        <div className='loader'>
           <CircularProgress />{' '}
           <Typography>Loading today's stories...</Typography>
         </div>
@@ -42,7 +42,6 @@ class NewsList extends Component {
 }
 
 const mapStateToProps = ({news}) => {
-  console.log('NEWS',news.articles)
   return {news}
 }
 

@@ -11,3 +11,26 @@ li {
   text-align: center;
   width: 200px;
 }
+
+.refresh-button {
+  text-align: center;
+}
+
+.btn {
+  background-color: rgb(90, 41, 41);
+  color: white;
+  padding: 7px 20px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+}
+
+.btn:focus {outline:none}
+
+.btn:active {
+  background-color: rgb(99, 67, 67);
+  box-shadow: none;
+  transform: scale(.97) translateY(2px);
+}

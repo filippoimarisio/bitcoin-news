@@ -6,7 +6,7 @@ const NewsCard = props => {
   return (
     <div className='card'>
       <a href={article.url} rel="noopener noreferrer" target="_blank">
-        <img className='card__image' src={article.urlToImage} alt={article.title}/>
+        <img className='card__image' src={article.urlToImage} alt='img'/>
         <h1 className='card__title'>
           {article.title}
         </h1>

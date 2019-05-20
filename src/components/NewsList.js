@@ -12,6 +12,10 @@ class NewsList extends Component {
     this.props.fetchNews()
   }
 
+  refreshData = () => {
+    this.props.fetchNews()
+  }
+
   render() {
 
     if (!this.props.news.articles) {
@@ -27,6 +31,9 @@ class NewsList extends Component {
 
     return (
       <div>
+        <div className='refresh-button'>
+          <button className='btn' onClick={this.refreshData}>New stories</button>
+        </div>
         <ul>
           { articles.map(article => {
             return (
@@ -42,6 +49,7 @@ class NewsList extends Component {
 }
 
 const mapStateToProps = ({news}) => {
+  console.log(news)
   return {news}
 }
 

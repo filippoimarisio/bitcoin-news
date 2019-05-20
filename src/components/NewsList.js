@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import {fetchNews} from '../actions/fetchNews'
-import {
-  CircularProgress,
-  Typography,
-} from '@material-ui/core'
+import { connect } from 'react-redux';
+import {fetchNews} from '../actions/fetchNews';
+import { CircularProgress, Typography} from '@material-ui/core';
+import NewsCard from './NewsCard';
+import './NewsList.css'
 
 
 class NewsList extends Component {
@@ -32,7 +31,7 @@ class NewsList extends Component {
           { articles.map(article => {
             return (
               <li key={article.url}>
-                {article.title}
+                <NewsCard article={article}/>
               </li>
             )
           })}

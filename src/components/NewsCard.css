@@ -1,0 +1,28 @@
+.card {
+  margin: 30px 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.26);
+  overflow:hidden;
+}
+
+.card__image {
+  margin: 10px;
+  width: calc(100% - 20px);
+  max-height: 250px;
+}
+
+.card__title {
+  font-size: 1.2rem;
+  color: rgb(65, 29, 29);
+  margin: 10px;
+}
+
+.card__author {
+  font-size: 0.8rem;
+  margin: 10px;
+}

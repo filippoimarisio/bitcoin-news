@@ -4,7 +4,6 @@ import {APIKey} from '../APIKey'
 export const FETCH_NEWS = 'FETCH_NEWS'
 
 const newsUrl = 'https://newsapi.org/v2/everything?q=bitcoin&from=2019-04-20&sortBy=publishedAt&apiKey='
-console.log('TEST', `${newsUrl}${APIKey}`)
 
 export const fetchNews = () => dispatch => {
   request
